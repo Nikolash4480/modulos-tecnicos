@@ -1,0 +1,11 @@
+<!-- @dsCard group="Listas" height=296 subtitle="Fila numerada oscura; la activa en naranja con rayado" -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);padding:24px;box-sizing:border-box}</style>
+</head><body><div id="r"></div>
+<script>
+var h=React.createElement,K=window.TechKit;
+function Demo(){return h('div',{style:{maxWidth:360}},h(K.CategoryRow,{n:'01',title:'Lenguaje',subtitle:'Modelos • Texto • Razonamiento',active:true}),h(K.CategoryRow,{n:'02',title:'Multimodal',subtitle:'Audio • Imagen • Video'}),h(K.CategoryRow,{n:'03',title:'Agentes',subtitle:'Autonomía • Herramientas'}),h(K.CategoryRow,{n:'04',title:'Uso de herramientas',subtitle:'APIs • Sandbox'}));}
+ReactDOM.createRoot(document.getElementById('r')).render(h(Demo));
+</script></body></html>

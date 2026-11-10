@@ -1,0 +1,11 @@
+<!-- @dsCard group="Técnicas" height=216 subtitle="Numeral gigante en mono 700, con velo opcional" -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);padding:24px;box-sizing:border-box}</style>
+</head><body><div id="r"></div>
+<script>
+var h=React.createElement,K=window.TechKit;
+function Demo(){return h('div',{style:{display:'flex',gap:36,alignItems:'flex-end'}},h(BigWrap,null,h(K.BigNumeral,{value:'04',size:150})),h(BigWrap,{dark:true},h(K.BigNumeral,{value:'0F',tone:'light',size:100,tint:true})));function BigWrap(p){return h('div',{style:{padding:20,background:p.dark?'var(--night)':'var(--accent)',color:'var(--ink)'}},p.children);}}
+ReactDOM.createRoot(document.getElementById('r')).render(h(Demo));
+</script></body></html>

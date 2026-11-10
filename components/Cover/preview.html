@@ -1,0 +1,29 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0}
+.c{position:relative;width:960px;height:288px;background:var(--bg);overflow:hidden;font-family:var(--font-sans)}
+svg{position:absolute;left:0;top:0;display:block}
+.t{position:absolute;left:40px;bottom:36px;width:440px}
+h1{margin:0;font-size:56px;line-height:1;font-weight:600;letter-spacing:-.03em;color:var(--ink)}
+p{margin:14px 0 0;font-size:14px;line-height:20px;color:var(--ink-2)}
+</style></head>
+<body><div class="c">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!-- bloques: accent 200×288 (sangra arriba y abajo), night 160×168, tile 120×120 (sangra arriba y a la derecha), paper 160×120, ink 120×168 -->
+<!-- disposición: losa alta naranja con satélites escalonados a la derecha; lados en múltiplos de 8px -->
+<!-- patrón: rayado diagonal de las franjas de seguridad sobre el bloque oscuro, con marcas de registro en las esquinas -->
+<!-- escalas: dibujo técnico → radius-none en todos los bloques -->
+<defs><pattern id="x" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="8" fill="var(--on-night)" opacity=".5"/></pattern></defs>
+<rect x="480" y="0" width="200" height="288" fill="var(--accent)"/>
+<rect x="680" y="0" width="160" height="168" fill="var(--night)"/>
+<rect x="680" y="0" width="160" height="168" fill="url(#x)"/>
+<rect x="840" y="0" width="120" height="120" fill="var(--tile)"/>
+<rect x="680" y="168" width="160" height="120" fill="var(--paper)"/>
+<rect x="840" y="120" width="120" height="168" fill="var(--ink)"/>
+<g stroke="var(--ink)" stroke-width="1.5" fill="none"><path d="M496 16h14M503 9v14"/><path d="M650 272h14M657 265v14"/></g>
+</svg>
+<div class="t"><h1>Módulos<br>Técnicos</h1><p>Piezas mono, rectas y de un solo naranja.</p></div>
+</div></body></html>

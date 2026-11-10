@@ -1,0 +1,24 @@
+<!-- @dsCard group="Composiciones" height=1210 width=960 page=true subtitle="Tres láminas armadas solo con las piezas" -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);padding:24px;box-sizing:border-box;width:960px}.s{display:flex;flex-direction:column;gap:32px}.lab{font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}.stage{border:1px solid var(--line);border-radius:12px;overflow:hidden}</style>
+</head><body><div id="r"></div>
+<script>
+var h=React.createElement,K=window.TechKit;
+function L(t,c,st){return h('div',null,h('p',{className:'lab'},t),h('div',{className:'stage',style:st},c));}
+function Demo(){return h('div',{className:'s'},
+
+ L('Lámina de manual',
+  h('div',{style:{display:'grid',gridTemplateColumns:'56px 1fr 1fr',background:'var(--paper)',color:'var(--ink)',minHeight:420}},
+   h(K.RailNav,{items:[{code:'KJ'},{code:'CM',num:'04',active:true},{code:'FR',num:'05'}],action:'arrowUp'}),
+   h('div',{style:{padding:24,display:'grid',gap:20,alignContent:'start'}},h(K.TechTitle,{eyebrow:'Dibujo técnico',lines:['ND-04','Manual de','ensamblaje']}),h(K.SpecLabel,{label:'Propietario',rule:true},'Módulo de núcleo'),h(K.SpecTable,{head:['Pieza','','Nodo'],rows:[['Etiqueta','/*','Mono'],['Asignado','/*','Estéreo']]})),
+   h('div',{style:{padding:24,background:'var(--accent)',display:'grid',gap:16,alignContent:'space-between'}},h(K.BigNumeral,{value:'04',size:140}),h(K.BarcodeStrip,{code:'PLS SCN',seed:7})))),
+ L('Informe monocromo',
+  h('div',{style:{padding:24,display:'grid',gridTemplateColumns:'1.2fr 1fr',gap:24,background:'var(--paper)'}},
+   h('div',{style:{display:'grid',gap:20,alignContent:'start'}},h(K.BigMetric,{value:'85%',meta:['ant. 79%','máx. 65%'],title:'Atención',text:'más de 3.000 botellas obstruyendo'}),h(K.CompareRow,{label:'Playa Pacífica',value:'6.000 botellas',meta:'actualizado 8:07'}),h(K.ProgressLine,{label:'Progreso',value:42}),h(K.WarningBlock,{label:'Plástico',sub:'Advertencia'})),
+   h('div',null,h(K.CategoryRow,{n:'01',title:'Lenguaje',subtitle:'Modelos • Texto',active:true}),h(K.CategoryRow,{n:'02',title:'Multimodal',subtitle:'Audio • Imagen'}),h(K.CategoryRow,{n:'03',title:'Agentes',subtitle:'Autonomía • Herramientas'})))),
+ L('Pantalla móvil técnica',
+  h('div',{style:{padding:24,display:'flex',justifyContent:'center',background:'var(--bg)'}},h('div',{style:{width:320,display:'grid',gap:12}},h(K.SelectableBars,{data:[{label:'11',value:6},{label:'12',value:9},{label:'13',value:7,selected:true},{label:'14',value:10},{label:'15',value:5}]}),h(K.BottomTabBar,{active:1,items:[{icon:'activity',label:'Actividad'},{icon:'training',label:'Entrenar'},{icon:'cube',label:'Modelos'}]})))));}
+ReactDOM.createRoot(document.getElementById('r')).render(h(Demo));
+</script></body></html>

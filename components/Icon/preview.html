@@ -1,0 +1,12 @@
+<!-- @dsCard group="Átomos" height=98 subtitle="8 iconos lineales de 24px, trazo 1,6" -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);padding:24px;box-sizing:border-box}</style>
+</head><body><div id="r"></div>
+<script>
+var h=React.createElement,K=window.TechKit;
+function Demo(){var names=["arrow","arrowUp","plus","warning","activity","training","cube","logo"];
+return h('div',{style:{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(76px,1fr))',gap:'18px 8px',color:'var(--ink)'}},names.map(function(n){return h('div',{key:n,style:{display:'flex',flexDirection:'column',alignItems:'center',gap:6,fontSize:10,color:'var(--ink-2)'}},h(K.Icon,{name:n,size:24}),h('span',null,n));}));}
+ReactDOM.createRoot(document.getElementById('r')).render(h(Demo));
+</script></body></html>

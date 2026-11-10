@@ -1,0 +1,11 @@
+<!-- @dsCard group="Cifras e informe" height=204 subtitle="Barras grises con la seleccionada resaltada y enmarcada" -->
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>html,body{margin:0}body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);padding:24px;box-sizing:border-box}</style>
+</head><body><div id="r"></div>
+<script>
+var h=React.createElement,K=window.TechKit;
+function Demo(){return h('div',{style:{maxWidth:380}},h(K.SelectableBars,{data:[{label:'11',value:6},{label:'12',value:9},{label:'13',value:7,selected:true},{label:'14',value:10},{label:'15',value:5},{label:'16',value:8,selected:true},{label:'17',value:4}]}));}
+ReactDOM.createRoot(document.getElementById('r')).render(h(Demo));
+</script></body></html>
